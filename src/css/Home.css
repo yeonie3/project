@@ -1,0 +1,24 @@
+#middle {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#middle-left {
+    flex: 1;
+}
+
+#middle-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left:200px;
+}
+
+#middle-top {
+    flex: 1;
+}
+
+#middle-bottom {
+    flex: 1;
+}

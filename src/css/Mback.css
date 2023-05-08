@@ -1,12 +1,28 @@
 .travel {
-
     width: 100%;
     height:10%;
     overflow: hidden;
+    position: relative; /* 추가 */
 }
 
 .travel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width:100%;
+    vertical-align: middle;
 }
+
+/*.imagecan {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+.imagecan-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    font-size:xxx-large;
+}
+

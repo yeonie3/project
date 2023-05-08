@@ -1,26 +1,22 @@
-.container1 {
+.container_2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.images2 {
-    display: inline-block;
+.images_2 {
+    display: flex;
     justify-content: space-between;
     width: 100%;
-
+    gap: 10px;
 }
 
-.images2 img {
-    display: inline;
-    padding-left:50px;
-    width: 300px;
-    height:300px;
-
-
+.images_2 img {
+    width: 500px;
+    height:200px;
 }
 
-.board2 {
+.board_2 {
     width: 100%;
 }
