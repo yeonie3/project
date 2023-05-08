@@ -1,18 +1,21 @@
-import React, {useState} from "react";
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
 
+import React, { useState } from "react";
+import Calendar from "react-calendar";
+import moment from "moment";
+import "react-calendar/dist/Calendar.css";
 
-function MyApp(){
-    const[value, onChange] = useState(new Date());
+function MyApp() {
+    const [value, onChange] = useState(new Date());
+
+    // 선택한 날짜를 특정 형식으로 변환하여 반환하는 함수
+    const formatDate = (date) => moment(date).format("YYYY년 MM월 DD일");
 
     return (
         <>
-            <Calendar onChange ={onChange} value={value} />
-            <div className="text">
-                {moment(vaue).format("YYYY년 MM월 DD일")}
-            </div>
+            <Calendar onChange={onChange} value={value} />
+            <div className="text">{formatDate(value)}</div>
         </>
-    )
+    );
 }
+
 export default MyApp;

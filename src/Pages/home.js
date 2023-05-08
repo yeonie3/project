@@ -13,7 +13,7 @@ function Home(props) {
     return (
         <>
             <Mback />
-            <p>제일 먼저 보임</p>
+
             <div id="middle">
                 <div id="middle-left">
                     <App1_1/>
