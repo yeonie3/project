@@ -1,43 +1,30 @@
-import '../css/App1.css';
+import '../css/App2.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-export default function App1() {
+export default function App2() {
     const images = [
         {
-            id: 1,
+            id: 5,
             src: 'https://via.placeholder.com/150',
-            alt: 'Image 1',
-            link: '/image/1',
-            pageTitle: 'Image 1 Page',
+            alt: 'Image 5',
+            link: '/image/5',
+            pageTitle: 'Image 5 Page',
         },
         {
-            id: 2,
+            id: 6,
             src: 'https://via.placeholder.com/150',
-            alt: 'Image 2',
-            link: '/image/2',
-            pageTitle: 'Image 2 Page',
+            alt: 'Image 6',
+            link: '/image/6',
+            pageTitle: 'Image 6 Page',
         },
-        {
-            id: 3,
-            src: 'https://via.placeholder.com/150',
-            alt: 'Image 3',
-            link: '/image/3',
-            pageTitle: 'Image 3 Page',
-        },
-        {
-            id: 4,
-            src: 'https://via.placeholder.com/150',
-            alt: 'Image 4',
-            link: '/image/4',
-            pageTitle: 'Image 4 Page',
-        },
+
     ];
 
     return (
-        <div className="container">
+        <div className="container1">
 
-            <div className="images">
+            <div className="images2">
                 {images.map((image) => (
                     <Link to={image.link} key={image.id}>
                         <img src={image.src} alt={image.alt} />
@@ -45,7 +32,7 @@ export default function App1() {
                 ))}
 
             </div>
-            <div className="board">
+            <div className="board2">
                 <Routes>
                     {images.map((image) => (
                         <Route key={image.id} path={image.link} element={<h1>{image.pageTitle}</h1>} />

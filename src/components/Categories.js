@@ -25,7 +25,8 @@ const categories=[
 //카테고리 영역 블락
 const CategoriesBlock = styled.div`
   display: flex;
-  padding: 1rem;
+  padding: 1rem 0 1rem 30rem;
+  margin-left: 30px;
   width: 768px;
   margin: 0 auto;
   @media screen and (max-width: 768px) {
@@ -41,6 +42,7 @@ const Category = styled(NavLink)`
   text-decoration: none;
   color: inherit;
   padding-bottom: 0.25rem;
+  
 
   &:hover{
     color: #495057;

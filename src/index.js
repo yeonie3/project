@@ -1,18 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import App1 from './components/App1';
-import reportWebVitals from './reportWebVitals';
+//import reportWebVitals from './reportWebVitals';
 import Mback from "./components/Mback";
+
+import {BrowserRouter, Routes, Route, Link,RouterProvider} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <>
-        <App />
-
-    </>
+    <App/>
 
 );
 
-reportWebVitals();
