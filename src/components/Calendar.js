@@ -4,6 +4,18 @@ import Calendar from "react-calendar";
 import moment from "moment";
 import "react-calendar/dist/Calendar.css";
 
+const CalendarStyles = `
+  .react-calendar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .react-calendar__tile {
+    font-size: 16px;
+    padding: 8px;
+  }
+`;
+
 function MyApp() {
     const [value, onChange] = useState(new Date());
 

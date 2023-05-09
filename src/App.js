@@ -19,7 +19,7 @@ import Categories from "./components/Categories";
 const App = () =>{
     return(
 
-        <BrowserRouter>
+        <>
             <Categories/>
             <Routes>
                     <Route path="/" element={<Home />} />
@@ -28,7 +28,7 @@ const App = () =>{
                     <Route path="/sch" element={<Sch />} />
             </Routes>
             
-        </BrowserRouter>
+        </>
 
 
 

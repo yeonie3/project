@@ -8,26 +8,31 @@ import App1_1 from "../components/App1_1";
 import App1_2 from "../components/App1_2";
 import App2 from "../components/App2";
 import Board from '../Pages/Board';
+//import Plan from '../Pages/Plan';
 
 function Home(props) {
     return (
         <>
             <Mback />
 
-            <div id="middle">
-                <div id="middle-left">
-                    <App1_1/>
-                    <App1_2/>
-                </div>
-                <div id="middle-right">
-                    <div id="middle-top">
-                        <App2 />
+                <div id="middle">
+                    <div id="middle-left">
+
+                        <App1_1/>
+                        <App1_2/>
+
                     </div>
-                    <div id="middle-bottom">
-                        <Board />
+                    <div id="middle-right">
+                        <div id="middle-top">
+                            <App2 />
+                        </div>
+                        <div id="middle-bottom">
+                            <Board />
+                        </div>
                     </div>
                 </div>
-            </div>
+
+
         </>
     );
 }

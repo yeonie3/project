@@ -1,66 +1,75 @@
-
 import React from "react";
-import "../css/Mback.css";
+import{Link} from "react-router-dom";
 import styled from "styled-components";
 import travel from "../images/travel.jpg";
 import Calendar from "../components/Calendar";
-import Calendarthis from "../components/Calendarthis";
 
-const MbackWrapper = styled.div`
-  width: 100%;
-  overflow: hidden;
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
 `;
 
-const TravelImage = styled.img`
-  width: 100%;
-  vertical-align: middle;
-  object-fit: cover;
-`;
-
-const ImageCanText = styled.div`
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
   position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: x-large;
-
-  .arrive {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    //transform: translate(50%, -50%);
-  }
-  .depart {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    //transform: translate(-50%, -50%);
-  }
-
-
+  bottom: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 1rem;
+`;
+const imageback = styled.div`
+display:flex;
+  height:100% ;
+  width:100%;
 `;
 
+const Planblock = styled.div`
+  background-color: #bdf;
+  border: 2px solid #1bf;
+  padding: 0.5rem;
+  line-height: 1rem;
+  border-radius: 0.5rem;
+  
+`;
+
+const DepartBlock = styled.div`
+  position: absolute;
+  top: 30%;
+  
+`;
+
+const ArriveBlock = styled.div`
+  position: absolute;
+  top: 30%;
+  margin-left 20px
+  font-size: 2rem;
+`;
 
 function Mback() {
     return (
-        <MbackWrapper>
-            <TravelImage src={travel} alt="배경사진" />
-            <ImageCanText>
-                <div className={"depart"}>
+        <Container>
+            <div className={"imageback"}>
+                <img src={travel} alt="배경사진" />
+                <DepartBlock>
                     <p>출발날짜</p>
                     <Calendar />
-                </div>
-                <div className={"arrive"}>
+                </DepartBlock>
+                <ArriveBlock>
                     <p>도착지,도착날짜</p>
                     <Calendar />
-                </div>
+                </ArriveBlock>
+                <Row>
+                    <Planblock>
+                        <Link to="/Plan">일정생성</Link>
+                    </Planblock>
+                </Row>
+            </div>
 
-
-            </ImageCanText>
-
-        </MbackWrapper>
+        </Container>
     );
 }
 
