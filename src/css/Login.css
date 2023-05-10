@@ -1,8 +1,11 @@
 .login-wrap{
+
     text-align: center;
-    margin-top: 50px;
+    margin: 40vh 0 0 40vh;
+    /*margin: 400px 0 0 400px;*/
     background-color: pink;
     width:500px;
+
 }
 
 .login-id-wrap{

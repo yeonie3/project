@@ -1,17 +1,15 @@
+import React, { useState } from "react";
+import  CalendarComponent,{ formatDate } from "../components/Calendar.js";
+import Calendar from "../components/Calendar.js";
+function Plan(props) {
+    const { departDate, arriveDate } = props.location.state;
 
-import React from "react";
-import styled from "styled-components";
-
-
-
-function Plan(){
-    return(
-        <>
-            일정 test
-        </>
-        );
-
+    return (
+        <div>
+            <p>출발일: {formatDate(departDate)}</p>
+            <p>도착일: {formatDate(arriveDate)}</p>
+        </div>
+    );
 }
-
 
 export default Plan;

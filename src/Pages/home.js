@@ -13,7 +13,9 @@ import Board from '../Pages/Board';
 function Home(props) {
     return (
         <>
+            <div id="top">
             <Mback />
+            </div>
 
                 <div id="middle">
                     <div id="middle-left">
@@ -31,6 +33,7 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
+
 
 
         </>
