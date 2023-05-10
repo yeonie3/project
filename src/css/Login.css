@@ -1,40 +1,61 @@
+.all{
+    background-color: #f5f6f7;
+    padding-top: 1px;
+    height:1400px;
+    width: 1280px;
+    position: relative;
+    margin: 0 auto;
+}
 .login-wrap{
-
     text-align: center;
-    margin: 40vh 0 0 40vh;
+    margin: 40vh 0 0 35vh;
     /*margin: 400px 0 0 400px;*/
-    background-color: pink;
     width:500px;
+    height:300px;
 
+}
+.login-text{
+    padding-top: 50px;
 }
 
 .login-id-wrap{
-
-    margin: 0px 10px 8px 10px;
-    padding: 10px;
+    width:480px;
+    height: 52px;
+    margin: 0px 0px 8px 10px;
     border: solid 1px #dadada;
     background: #fff;
     outline:none;
     color:red;
 }
-.login-passwd-wrap{
 
+.login-passwd-wrap{
+    height: 52px;
     margin: 0px 10px 8px 10px;
-    padding: 10px;
+
     border: solid 1px #dadada;
     background: #fff;
 }
+
 .user_id{
-    border: none;
+    width:480px;
+    height: 52px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    border: solid 1px #dadada;
     outline:none;
-    width:100%;
+    font-size:large;
+
 }
-/*input 패스워드박스*/
-/*input 패스워드 form*/
+
 .user_pw{
-    border: none;
+    width:480px;
+    height: 52px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    border: solid 1px #dadada;
+    font-size:large;
     outline:none;
-    width:100%;
+
 }
 .loginBtn{
     height: 52px;
@@ -44,4 +65,14 @@
     background-color: #03c75a;
     color: #fff;
     cursor: pointer;
+}
+.under-login{
+    height: 50px;
+    /*border-bottom: 1px solid gainsboro;*/
+    margin: 25px 10px 35px 80px;
+}
+/*로그인상태유지*/
+.stay-check{
+    margin-left: 7px;
+    float: left;
 }

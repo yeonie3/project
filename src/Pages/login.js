@@ -16,14 +16,13 @@ const LoginIdWrap = () => {
                 className={isInputFocused ? "hidden-label" : ""}
                 htmlFor="input-id"
             >
-                아이디
+
             </label>
             <input
-                id="input-id"
-                className="input-id"
-                type="text"
+                id="input-id" className="user_id" typepe="text"
                 onFocus={handleInputFocus}
                 onBlur={handleInputBlur}
+                placeholder="아이디"
             />
         </div>
     );
@@ -37,21 +36,32 @@ const Login = () => {
     };
 
     return (
+        <div className={"all"}>
         <div className={"login-wrap"}>
-            <h1>로그인</h1>
+            <div className="login-text">
             <form method="POST" action="/loginProcess">
                 <LoginIdWrap />
                 <div className={"login-passwd-wrap"}>
-                    <label htmlFor="userPw">비밀번호:</label>
-                    <input type="password" id="userPw" name="user_pw" />
+                    <label htmlFor="userPw"></label>
+                    <input type="password" id="userPw" className="user_pw" placeholder="비밀번호" />
                 </div>
+                {/*    <button className="loginBtn" onClick={loginBtn}>*/}
+                {/*        로그인*/}
+                {/*    </button>*/}
                 <div className={"loginBtn"}>
-                    {/*<button className="loginBtn" onClick={loginBtn}>*/}
-                    {/*    로그인*/}
-                    {/*</button>*/}
                     로그인
                 </div>
             </form>
+            <div className="under-login">
+                <div className="stay-check">
+                    <input type="checkbox" name="stay-btn" value="stay" className="stay-checkbox" />로그인 상태 유지
+                </div>
+                <div className="ip-check">
+                    IP 보안 <input type="checkbox" name="stay-btn" value="stay" className="ip-checkbox" />
+                </div>
+            </div>
+            </div>
+        </div>
         </div>
     );
 };

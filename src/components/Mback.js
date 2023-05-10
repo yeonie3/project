@@ -20,6 +20,8 @@ const ImageBack = styled.div`
     display: flex;
     height: 100%;
     width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
 `;
 
 const PlanBlock = styled.div`
@@ -32,15 +34,15 @@ const PlanBlock = styled.div`
 
 const DepartBlock = styled.div`
   position: absolute;
-  top: 30%;
-  margint-left: 30px;
+  top: 20%;
+  margin-left: 200px;
 `;
 
 const ArriveBlock = styled.div`
   position: absolute;
-  top: 30%;
-  margin-left: 20px;
-  font-size: 2rem;
+  top: 20%;
+  margin-left: 700px;
+  
 `;
 
 function Mback() {

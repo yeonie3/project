@@ -9,6 +9,9 @@ function Plan(props) {
             <p>출발일: {formatDate(departDate)}</p>
             <p>도착일: {formatDate(arriveDate)}</p>
         </div>
+        // <>
+        //     TEST
+        // </>
     );
 }
 

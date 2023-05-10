@@ -8,13 +8,14 @@ import App1_1 from "../components/App1_1";
 import App1_2 from "../components/App1_2";
 import App2 from "../components/App2";
 import Board from '../Pages/Board';
-//import Plan from '../Pages/Plan';
+import Plan from '../Pages/plan';
 
 function Home(props) {
     return (
         <>
             <div id="top">
             <Mback />
+
             </div>
 
                 <div id="middle">
@@ -33,7 +34,6 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
-
 
 
         </>

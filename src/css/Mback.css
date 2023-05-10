@@ -4,19 +4,49 @@
     height: 100%;
     object-fit: cover;
 }
+.ImageBack {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
 
 .DepartBlock,
 .ArriveBlock {
     color: #fff;
     width: 200px;
 }
+.DepartBlock{
+    position: absolute;
+    top: 30%;
+    margin-left: 30px;
+}
+.ArriveBlock{
+    position: absolute;
+    top: 30%;
+    margin-left: 120px;
+    font-size: 2rem;
+}
 
 .Row {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
     padding: 0 1rem;
 }
 
 .Planblock a {
     color: #fff;
+    background-color: #bdf;
+    border: 2px solid #1bf;
+    padding: 0.5rem;
+    line-height: 1rem;
+    border-radius: 0.5rem;
 
 }
 
