@@ -5,6 +5,7 @@ import Join from './Pages/join';
 import Login from './Pages/login';
 import Sch from './Pages/sch';
 import Home from './Pages/home';
+import plan from './Pages/plan';
 import Mback from './components/Mback';
 import App1_1 from './components/App1_1';
 import App1_2 from './components/App1_2';
@@ -21,12 +22,16 @@ const App = () =>{
 
         <>
             <Categories/>
+
             <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/join" element={<Join />} />
                     <Route path="/sch" element={<Sch />} />
+                    <Route path="/plan" element={<plan />} />
+
             </Routes>
+
             
         </>
 

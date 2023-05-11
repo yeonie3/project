@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import travel from "../images/travel.jpg";
-import Plan from "../Pages/plan"
+import plan from "../Pages/plan"
+import '../css/Mback.css';
 import CalendarComponent, { formatDate } from "../components/Calendar";
 
 
@@ -16,57 +17,43 @@ const Row = styled.div`
   padding: 0 1rem;
 `;
 
-const ImageBack = styled.div`
-    display: flex;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-`;
 
-const PlanBlock = styled.div`
-  background-color: #bdf;
-  border: 2px solid #1bf;
-  padding: 0.5rem;
-  line-height: 1rem;
-  border-radius: 0.5rem;
-`;
-
-const DepartBlock = styled.div`
-  position: absolute;
-  top: 20%;
-  margin-left: 200px;
-`;
-
-const ArriveBlock = styled.div`
-  position: absolute;
-  top: 20%;
-  margin-left: 700px;
-  
-`;
 
 function Mback() {
     const [departDate, setDepartDate] = useState(new Date());
     const [arriveDate, setArriveDate] = useState(new Date());
 
+    const navigate = useNavigate();
+    const PlanBlock = () =>{
+        navigate("/plan");
+    }
+
     return (
         <div id="Container">
-            <ImageBack>
+            <div className= "ImageBack">
                 <img src={travel} alt="배경사진" />
-                <DepartBlock>
+                <div className= "DepartBlock">
                     <p>출발날짜</p>
                     <CalendarComponent onChange={setDepartDate} value={departDate} />
-                </DepartBlock>
-                <ArriveBlock>
+                </div>
+                <div className="ArriveBlock">
                     <p>도착지, 도착날짜</p>
                     <CalendarComponent onChange={setArriveDate} value={arriveDate} />
-                </ArriveBlock>
-                <Row>
-                    <PlanBlock>
-                        <Link to={{ pathname: "/Plan", state: { departDate, arriveDate } }}>일정생성</Link>
-                    </PlanBlock>
-                </Row>
-            </ImageBack>
+                </div>
+                <button className="PlanBlock" onClick={PlanBlock}>일정 생성</button>
+
+                {/*<Row>*/}
+                    {/*<PlanBlock>*/}
+                    {/*    <Link to={{ pathname: "/plan", state: { departDate, arriveDate } }}>일정생성</Link>*/}
+
+                    {/*</PlanBlock>*/}
+
+                    {/*<NavLink to="/Plan" className={(PlanBlock) => {*/}
+                    {/*    return isActive ? '일정이동' : '';*/}
+                    {/*}}>*/}
+                    {/*</NavLink>*/}
+                {/*</Row>*/}
+            </div>
         </div>
     );
 }

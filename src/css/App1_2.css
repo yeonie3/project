@@ -18,6 +18,7 @@
 .images_2 img {
     width: 300px;
     height:300px;
+    border-radius: 15px;
 }
 
 .board_2 {

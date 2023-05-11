@@ -11,42 +11,43 @@
     text-align: center;
     font-size: 1.5rem;
 }
-
-.DepartBlock,
-.ArriveBlock {
-    color: #fff;
-    width: 200px;
-}
 .DepartBlock{
     position: absolute;
-    top: 30%;
-    margin-left: 30px;
+    top: 20%;
+    margin-left: 200px;
 }
+
 .ArriveBlock{
     position: absolute;
-    top: 30%;
-    margin-left: 120px;
-    font-size: 2rem;
+    top: 20%;
+    margin-left: 700px;
+
 }
 
-.Row {
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: row;
+/*.Row {*/
+/*    padding: 0 1rem;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    justify-content: space-between;*/
+/*    padding: 0 1rem;*/
+/*}*/
+.PlanBlock {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 1rem;
-}
-
-.Planblock a {
+    width: 200px;
+    height: 100px;
+    line-height: 55px;
+    margin: 550px 10px 8px 1000px;
+    border: solid 1px rgba(0,0,0,.1);
+    background-color: #191970;
     color: #fff;
-    background-color: #bdf;
-    border: 2px solid #1bf;
-    padding: 0.5rem;
-    line-height: 1rem;
-    border-radius: 0.5rem;
-
+    cursor: pointer;
+    font-size:30px;
+    border-radius: 15px;
 }
 
+.PlanBlock:hover{
+    box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
+}

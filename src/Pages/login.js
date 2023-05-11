@@ -45,10 +45,7 @@ const Login = () => {
                     <label htmlFor="userPw"></label>
                     <input type="password" id="userPw" className="user_pw" placeholder="비밀번호" />
                 </div>
-                {/*    <button className="loginBtn" onClick={loginBtn}>*/}
-                {/*        로그인*/}
-                {/*    </button>*/}
-                <div className={"loginBtn"}>
+                <div className={"loginBtn"} onClick={loginBtn}>
                     로그인
                 </div>
             </form>
