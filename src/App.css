@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+@font-face{
+  font-family: Dovemayo_gothic;
+  src: url('./fonts/Dovemayo_gothic.ttf');
+}

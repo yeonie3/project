@@ -9,7 +9,7 @@ import App1_1 from "../components/App1_1";
 import App1_2 from "../components/App1_2";
 import App2 from "../components/App2";
 import Board from '../Pages/Board';
-import Plan from '../Pages/plan';
+import Plan from '../Pages/Plan';
 
 
 function Home(props) {
@@ -30,7 +30,9 @@ function Home(props) {
 
                     </div>
                     <div id="middle-right">
-                        <p>추천여행지</p>
+                        <div id ="RightText">
+                            추천여행지
+                        </div>
                         <div id="middle-top">
                             <App2 />
                         </div>

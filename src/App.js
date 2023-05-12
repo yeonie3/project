@@ -1,11 +1,11 @@
 
 import './App.css';
 //import './css/App1.css';
-import Join from './Pages/join';
-import Login from './Pages/login';
+import Join from './Pages/Join';
+import Login from './Pages/Login';
 import Sch from './Pages/sch';
-import Home from './Pages/home';
-import plan from './Pages/plan';
+import Home from './Pages/Home';
+import Plan from './Pages/Plan';
 import Mback from './components/Mback';
 import App1_1 from './components/App1_1';
 import App1_2 from './components/App1_2';
@@ -28,7 +28,8 @@ const App = () =>{
                     <Route path="/login" element={<Login />} />
                     <Route path="/join" element={<Join />} />
                     <Route path="/sch" element={<Sch />} />
-                    <Route path="/plan" element={<plan />} />
+                    <Route path="/plan" element={<Plan />} />
+                    {/*<Route path="/Board" element={<Board />} />*/}
 
             </Routes>
 

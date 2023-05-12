@@ -17,6 +17,7 @@
 }
 #LeftText{
     font-size:30px;
+    font-family:"Dovemayo_gothic";
 }
 
 #middle-left {
@@ -25,7 +26,10 @@
     height:100%;
     background-color: aqua;
 }
-
+#RightText{
+    font-size:30px;
+    font-family:"Dovemayo_gothic";
+}
 #middle-right {
     display: flex;
     flex-direction: column;
@@ -46,3 +50,4 @@
     flex: 1;
     height:50%;
 }
+

@@ -5,11 +5,13 @@
     object-fit: cover;
 }
 .ImageBack {
+    z-index: 0;
     display: flex;
     height: 100%;
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
+    font-family:"Dovemayo_gothic";
 }
 .DepartBlock{
     position: absolute;
@@ -24,30 +26,29 @@
 
 }
 
-/*.Row {*/
-/*    padding: 0 1rem;*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    width: 100%;*/
-/*    justify-content: space-between;*/
-/*    padding: 0 1rem;*/
-/*}*/
 .PlanBlock {
     position: absolute;
     width: 200px;
-    height: 100px;
+    height: 70px;
     line-height: 55px;
-    margin: 550px 10px 8px 1000px;
+    margin: 590px 10px 8px 1000px;
     border: solid 1px rgba(0,0,0,.1);
     background-color: #191970;
     color: #fff;
     cursor: pointer;
     font-size:30px;
+    text-align: center;
     border-radius: 15px;
 }
 
 .PlanBlock:hover{
     box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
 }
+
+/*.test{  수정 중 */
+/*    width:1200px;*/
+/*    height:700px;*/
+/*    background-color:red;*/
+/*    background-color: rgba( 255, 255, 255, 0.5 );*/
+/*    z-index: 1;*/
+/*}*/
