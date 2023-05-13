@@ -6,6 +6,12 @@ import Login from './Pages/Login';
 import Sch from './Pages/sch';
 import Home from './Pages/Home';
 import Plan from './Pages/Plan';
+import Pop1 from './Pages/Pop1';
+import Pop2 from './Pages/Pop2';
+import Pop3 from './Pages/Pop3';
+import Pop4 from './Pages/Pop4';
+import Pop5 from './Pages/Pop5';
+import Pop6 from './Pages/Pop6';
 import Mback from './components/Mback';
 import App1_1 from './components/App1_1';
 import App1_2 from './components/App1_2';
@@ -30,6 +36,12 @@ const App = () =>{
                     <Route path="/sch" element={<Sch />} />
                     <Route path="/plan" element={<Plan />} />
                     {/*<Route path="/Board" element={<Board />} />*/}
+                    <Route path="/pop1" element={<Pop1 />} />
+                    <Route path="/pop2" element={<Pop2 />} />
+                    <Route path="/pop3" element={<Pop3 />} />
+                    <Route path="/pop4" element={<Pop4 />} />
+                    <Route path="/pop5" element={<Pop5 />} />
+                    <Route path="/pop6" element={<Pop6 />} />
 
             </Routes>
 

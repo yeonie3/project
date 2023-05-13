@@ -1,3 +1,4 @@
+
 import React from 'react';
 import '../css/App1_1.css';
 import '../css/App1_2.css';
@@ -15,6 +16,7 @@ import Plan from '../Pages/Plan';
 function Home(props) {
     return (
         <>
+
             <div id="top">
             <Mback />
 
@@ -33,10 +35,10 @@ function Home(props) {
                         <div id ="RightText">
                             추천여행지
                         </div>
-                        <div id="middle-top">
+                        <div id="middle-rtop">
                             <App2 />
                         </div>
-                        <div id="middle-bottom">
+                        <div id="middle-rbottom">
                             <Board />
                         </div>
                     </div>

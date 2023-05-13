@@ -2,7 +2,7 @@ import "../css/Login.css";
 import React, { useState } from "react";
 import { BrowserRouter as Router, useNavigate } from "react-router-dom";
 
-//임시
+//임시(로그인 db와 연동해서 맞으면 "/"로 넘어가기 )
 const LoginIdWrap = () => {
     const [isInputFocused, setIsInputFocused] = useState(false);
     const handleInputFocus = () => setIsInputFocused(true); //로그인함수체크 불리언

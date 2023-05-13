@@ -28,18 +28,18 @@ const Join = () => {
                         id="name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        placeholder="이름을 입력하세요."
+
                         required
                     />
                 </div>
                 <div className="input-wrap">
-                    <label htmlFor="email">이메일</label>
+                    <label htmlFor="email">이메</label>
                     <input
                         type="email"
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="이메일을 입력하세요."
+
                         required
                     />
                 </div>
@@ -50,7 +50,7 @@ const Join = () => {
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder="비밀번호를 입력하세요."
+
                         required
                     />
                 </div>

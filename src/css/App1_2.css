@@ -7,7 +7,13 @@
     height:50%;
     background-color: blue;
 }
-
+.text{
+    display: flex;
+    flex-direction: row;
+}
+.text h2{
+    margin: 0 80px;
+}
 .images_2 {
     display: flex;
     justify-content: space-between;
@@ -21,6 +27,3 @@
     border-radius: 15px;
 }
 
-.board_2 {
-    width: 100%;
-}

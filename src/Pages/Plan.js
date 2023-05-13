@@ -1,18 +1,17 @@
-import React, { useState } from "react";
-import {NavLink, useNavigate} from "react-router-dom";
-import  CalendarComponent,{ formatDate } from "../components/Calendar.js";
-import Calendar from "../components/Calendar.js";
+import React from "react";
+import { useLocation } from "react-router-dom";
 
-function Plan(props) {
-    const { departDate, arriveDate } = props.location.state;
+const Plan = () => {
+    const location = useLocation();
+    const departDate = location.state?.departDate.toLocaleDateString();
+    const arriveDate = location.state?.arriveDate.toLocaleDateString();
 
     return (
         <div>
-            <p>출발일: {formatDate(departDate)}</p>
-            <p>도착일: {formatDate(arriveDate)}</p>
-        </div>
-
-    );
-}
+            <h1>일정 생성 페이지</h1>
+            <p>출발 날짜: {departDate}</p>
+            <p>도착 날짜: {arriveDate}</p>
+        </div>    );
+};
 
 export default Plan;

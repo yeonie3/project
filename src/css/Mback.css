@@ -7,12 +7,25 @@
 .ImageBack {
     z-index: 0;
     display: flex;
-    height: 100%;
     width: 100%;
+    height: 100%;
     text-align: center;
     font-size: 1.5rem;
     font-family:"Dovemayo_gothic";
 }
+/*!* 수정중 *!*/
+/*.Background{*/
+/*    z-index: 7;*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    width:500px;*/
+/*    height:300px;*/
+/*    margin: 0 auto;*/
+/*    background-color: brown;*/
+
+/*}*/
 .DepartBlock{
     position: absolute;
     top: 20%;
@@ -31,7 +44,7 @@
     width: 200px;
     height: 70px;
     line-height: 55px;
-    margin: 590px 10px 8px 1000px;
+    margin: 600px 10px 8px 1000px;
     border: solid 1px rgba(0,0,0,.1);
     background-color: #191970;
     color: #fff;
@@ -45,10 +58,3 @@
     box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
 }
 
-/*.test{  수정 중 */
-/*    width:1200px;*/
-/*    height:700px;*/
-/*    background-color:red;*/
-/*    background-color: rgba( 255, 255, 255, 0.5 );*/
-/*    z-index: 1;*/
-/*}*/

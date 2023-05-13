@@ -6,19 +6,6 @@ import plan from "../Pages/Plan"
 import '../css/Mback.css';
 import CalendarComponent, { formatDate } from "../components/Calendar";
 
-
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0 1rem;
-`;
-
-
-
 function Mback() {
     const [departDate, setDepartDate] = useState(new Date());
     const [arriveDate, setArriveDate] = useState(new Date());
@@ -41,11 +28,13 @@ function Mback() {
                     <p>도착지, 도착날짜</p>
                     <CalendarComponent onChange={setArriveDate} value={arriveDate} />
                 </div>
-                <div className="PlanBlock" onClick={PlanBlock}>일정 생성</div>
 
+                <div className="PlanBlock" onClick={PlanBlock}>일정 생성</div>
+                {/*<div className="Background"> </div>*/}
             </div>
+
         </div>
     );
-}
 
+}
 export default Mback;

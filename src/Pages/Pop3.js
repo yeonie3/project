@@ -1,17 +1,17 @@
 import React from 'react';
 
-const Board = () => {
+const Pop3 = () => {
     return (
         <div className="board-container">
-            <h2>게시판 들어갈 자리</h2>
+            <h2>pop3-  인기 방문지</h2>
             <div className="board-list">
                 <div className="board-item">
-                    <h3>게시판 페이지 그대로 출력</h3>
-                    <p>...</p>
+                    <h3>이미지 - 부연설명</h3>
+                    <p>10개정도? ..지도?</p>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Board;
+export default Pop3;

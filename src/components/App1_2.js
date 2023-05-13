@@ -1,6 +1,6 @@
 import '../css/App1_2.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function App1_2() {
     const images = [
@@ -8,20 +8,29 @@ export default function App1_2() {
             id: 3,
             src: 'https://via.placeholder.com/150',
             alt: 'Image 3',
-            link: '/image/3',
+            link: '/pop3',
             pageTitle: 'Image 3 Page',
         },
         {
             id: 4,
             src: 'https://via.placeholder.com/150',
             alt: 'Image 4',
-            link: '/image/4',
+            link: '/pop4',
             pageTitle: 'Image 4 Page',
         },
     ];
 
+
     return (
         <div className="container_2">
+            <div className={"text"}>
+                {images.map((image) => (
+                    <div key={image.id}>
+
+                        <h2>{image.pageTitle}</h2>
+                    </div>
+                ))}
+            </div>
 
             <div className="images_2">
                 {images.map((image) => (
@@ -30,15 +39,7 @@ export default function App1_2() {
                     </Link>
                 ))}
 
-            </div>
-            <div className="board_2">
-                <Routes>
-                    {images.map((image) => (
-                        <Route key={image.id} path={image.link} element={<h1>{image.pageTitle}</h1>} />
 
-                    ))}
-
-                </Routes>
             </div>
         </div>
     );

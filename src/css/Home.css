@@ -21,7 +21,7 @@
 }
 
 #middle-left {
-    flex: 1;
+
     width:50%;
     height:100%;
     background-color: aqua;
@@ -31,23 +31,18 @@
     font-family:"Dovemayo_gothic";
 }
 #middle-right {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
     width:50%;
     height:100%;
     background-color: navy;
 
 }
 
-#middle-top {
-    flex: 1;
+#middle-rtop {
     height:50%;
-    padding-top: 8px;
 }
 
-#middle-bottom {
-    flex: 1;
+#middle-rbottom {
     height:50%;
+    background-color: antiquewhite;
 }
 
