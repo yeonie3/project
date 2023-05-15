@@ -17,7 +17,7 @@ const categories=[
         text:'로그인'
     },
     {
-        name:'sch',
+        name:'schList',
         text:'나의일정'
     },
 ]

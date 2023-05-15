@@ -1,63 +1,112 @@
-import{Link} from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
+import "../css/Join.css";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Join = () => {
     const navigate = useNavigate();
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [form, setForm] = useState({
+        id: "",
+        pwd: "",
+        name: "",
+        birthdate: "",
+        phone: "",
+        email: "",
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setForm((prevForm) => ({
+            ...prevForm,
+            [name]: value,
+        }));
+    };
 
     const handleSignup = (e) => {
         e.preventDefault();
         // 회원가입 처리 로직
-        console.log("회원가입 정보: ", { name, email, password });
+        console.log("회원가입 정보: ", form);
         navigate("/login"); // 로그인 페이지로 이동
     };
 
     return (
         <div className="all">
-            <h2>회원가입</h2>
-            <form onSubmit={handleSignup}>
-                <div className="input-wrap">
-                    <label htmlFor="name">이름</label>
-                    <input
-                        type="text"
-                        id="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-
-                        required
-                    />
+            <div className={"join-wrap"}>
+                <div className={"join-text"}>
+                    <h2>회원가입(user)</h2>
+                    <form onSubmit={handleSignup}>
+                        <div className="input-id">
+                            <label htmlFor="id">아이디</label>
+                            <input
+                                type="text"
+                                id="id"
+                                className={"id"}
+                                value={form.id}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="input-pwd">
+                            <label htmlFor="pwd">비밀번호</label>
+                            <input
+                                type="text"
+                                id="pwd"
+                                className={"pwd"}
+                                value={form.pwd}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="input-name">
+                            <label htmlFor="name">이름</label>
+                            <input
+                                type="text"
+                                id="name"
+                                className={"name"}
+                                value={form.name}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="input-birthdate">
+                            <label htmlFor="birthdate">생년월일</label>
+                            <input
+                                type="text"
+                                id="birthdate"
+                                className={"birthdate"}
+                                value={form.birthdate}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="input-phone">
+                            <label htmlFor="phone">휴대폰 번호</label>
+                            <input
+                                type="text"
+                                id="phone"
+                                className={"phone"}
+                                value={form.phone}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="input-email">
+                            <label htmlFor="email">이메일</label>
+                            <input
+                                type="text"
+                                id="email"
+                                className={"email"}
+                                value={form.email}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <button type="submit" className="signup-btn">
+                            회원가입
+                        </button>
+                    </form>
                 </div>
-                <div className="input-wrap">
-                    <label htmlFor="email">이메</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-
-                        required
-                    />
-                </div>
-                <div className="input-wrap">
-                    <label htmlFor="password">비밀번호</label>
-                    <input
-                        type="password"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-
-                        required
-                    />
-                </div>
-                <button type="submit" className="signup-btn">
-                    회원가입
-                </button>
-            </form>
+            </div>
         </div>
     );
 };

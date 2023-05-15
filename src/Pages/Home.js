@@ -10,7 +10,7 @@ import App1_1 from "../components/App1_1";
 import App1_2 from "../components/App1_2";
 import App2 from "../components/App2";
 import Board from '../Pages/Board';
-import Plan from '../Pages/Plan';
+import SchArea from '../Pages/SchArea';
 
 
 function Home(props) {
