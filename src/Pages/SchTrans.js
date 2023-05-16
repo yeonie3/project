@@ -15,8 +15,8 @@ const SchTrans = () => {
     return (
         <div>
             <h1>일정 생성 페이지(교통 API)</h1>
-            <p>출발 날짜: {departDate}</p>
-            <p>도착 날짜: {arriveDate}</p>
+            <p>가는 날: {departDate}</p>
+            <p>오는 날: {arriveDate}</p>
 
             <div className="SaveBlock" onClick={SaveBlock}>일정 저장</div>
         </div>

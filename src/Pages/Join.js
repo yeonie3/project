@@ -40,7 +40,7 @@ const Join = () => {
                             <input
                                 type="text"
                                 id="id"
-                                className={"id"}
+                                name={"id"}
                                 value={form.id}
                                 onChange={handleChange}
                                 required
@@ -49,9 +49,9 @@ const Join = () => {
                         <div className="input-pwd">
                             <label htmlFor="pwd">비밀번호</label>
                             <input
-                                type="text"
+                                type="password"
                                 id="pwd"
-                                className={"pwd"}
+                                name={"pwd"}
                                 value={form.pwd}
                                 onChange={handleChange}
                                 required
@@ -62,7 +62,7 @@ const Join = () => {
                             <input
                                 type="text"
                                 id="name"
-                                className={"name"}
+                                name={"name"}
                                 value={form.name}
                                 onChange={handleChange}
                                 required
@@ -71,9 +71,9 @@ const Join = () => {
                         <div className="input-birthdate">
                             <label htmlFor="birthdate">생년월일</label>
                             <input
-                                type="text"
+                                type="date"
                                 id="birthdate"
-                                className={"birthdate"}
+                                name={"birthdate"}
                                 value={form.birthdate}
                                 onChange={handleChange}
                                 required
@@ -82,9 +82,9 @@ const Join = () => {
                         <div className="input-phone">
                             <label htmlFor="phone">휴대폰 번호</label>
                             <input
-                                type="text"
+                                type="number"
                                 id="phone"
-                                className={"phone"}
+                                name={"phone"}
                                 value={form.phone}
                                 onChange={handleChange}
                                 required
@@ -95,7 +95,7 @@ const Join = () => {
                             <input
                                 type="text"
                                 id="email"
-                                className={"email"}
+                                name={"email"}
                                 value={form.email}
                                 onChange={handleChange}
                                 required

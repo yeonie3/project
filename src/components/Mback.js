@@ -17,13 +17,13 @@ function Mback() {
 
     return (
         <div id="Container">
-            <div className= "ImageBack">
+             <div className= "ImageBack">
 
                 <img src={travel} alt="배경사진" />
                 <div className="Background">
                     <div className={"Departarea"}>
                         <p>도착지</p>
-                        {/*<Modal/>*/}
+                        {/*<modal/>*/}
                     </div>
                 <div className= "DepartBlock">
                     <p>출발날짜</p>

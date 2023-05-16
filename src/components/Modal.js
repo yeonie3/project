@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import DestinationList from "./DestinationList";
 
+
 const Background = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   bottom: 0;

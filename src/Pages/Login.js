@@ -1,6 +1,6 @@
 import "../css/Login.css";
 import React, { useState } from "react";
-import { BrowserRouter as Router, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router, useNavigate, Link } from "react-router-dom";
 
 //임시(로그인 db와 연동해서 맞으면 "/"로 넘어가기 )
 const LoginIdWrap = () => {
@@ -53,9 +53,7 @@ const Login = () => {
                 <div className="stay-check">
                     <input type="checkbox" name="stay-btn" value="stay" className="stay-checkbox" />로그인 상태 유지
                 </div>
-                <div className="ip-check">
-                    IP 보안 <input type="checkbox" name="stay-btn" value="stay" className="ip-checkbox" />
-                </div>
+                <Link to ="/join">회원가입</Link>
             </div>
             </div>
         </div>

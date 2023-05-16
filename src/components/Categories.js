@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import {Outlet} from "react-router-dom";
 import styled from 'styled-components';
 
+
 const categories=[
     {
         name:'home',
@@ -52,17 +53,19 @@ const Category = styled(NavLink)`
     margin-left: 1rem;
   }
 `;
-export default function Categories(){
+
+
+export default function Categories(props){
+    const isLoggedin= props.isLoggedin;
     return(
         <div>
             <header>
                 < CategoriesBlock>
                     {categories.map(c =>(
-                        <Category
-                            key={c.name}
-                            to={c.name==='home'?'/':`/${c.name}`}>
-                            {c.text}
-                        </Category>
+                        c.name==='login' && isLoggedin ?
+                            <Category key ={c.name} to={'/'}>로그아웃 </Category>
+                            :
+                            <Category key={c.name} to={c.name==='home'?'/':`/${c.name}`}>{c.text}</Category>
                     ))}
                 </CategoriesBlock>
             </header>

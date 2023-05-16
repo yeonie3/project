@@ -50,8 +50,8 @@ const SchArea = () => {
 
             <div className={"plan"}>
 
-                <p>출발 날짜: {departDate.toLocaleDateString('ko-KR')}</p>
-                <p>도착 날짜: {arriveDate.toLocaleDateString('ko-KR')}</p>
+                <p>가는 날: {departDate.toLocaleDateString('ko-KR')}</p>
+                <p>오는 날: {arriveDate.toLocaleDateString('ko-KR')}</p>
             </div>
             <ul>
                 {options.map((option, index) => (

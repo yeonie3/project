@@ -67,11 +67,14 @@
 }
 .under-login{
     height: 50px;
-    /*border-bottom: 1px solid gainsboro;*/
     margin: 25px 10px 35px 80px;
 }
 /*로그인상태유지*/
 .stay-check{
-    margin-left: 7px;
+    margin-left: 5px;
     float: left;
+}
+.joinBtn{
+    font-size:large;
+    background-color: red;
 }
